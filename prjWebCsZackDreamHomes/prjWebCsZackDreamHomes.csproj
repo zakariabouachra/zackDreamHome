@@ -1,0 +1,244 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC1AC7E4-2661-4F35-AB0F-149ABF6611AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjWebCsZackDreamHomes</RootNamespace>
+    <AssemblyName>prjWebCsZackDreamHomes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44369</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\css\bootstrap-grid.css" />
+    <Content Include="GUI\css\bootstrap-grid.min.css" />
+    <Content Include="GUI\css\bootstrap-reboot.css" />
+    <Content Include="GUI\css\bootstrap-reboot.min.css" />
+    <Content Include="GUI\css\bootstrap.css" />
+    <Content Include="GUI\css\bootstrap.min.css" />
+    <Content Include="GUI\css\style.css" />
+    <Content Include="GUI\images\about-banner-1.png" />
+    <Content Include="GUI\images\about-banner-2.jpg" />
+    <Content Include="GUI\images\author.jpg" />
+    <Content Include="GUI\images\blog-1.png" />
+    <Content Include="GUI\images\blog-2.jpg" />
+    <Content Include="GUI\images\blog-3.jpg" />
+    <Content Include="GUI\images\hero-banner.png" />
+    <Content Include="GUI\images\imageIndex.png" />
+    <Content Include="GUI\images\logo-light.png" />
+    <Content Include="GUI\images\logo.png" />
+    <Content Include="GUI\images\property-1.jpg" />
+    <Content Include="GUI\images\property-2.jpg" />
+    <Content Include="GUI\images\property-3.jpg" />
+    <Content Include="GUI\images\property-4.png" />
+    <Content Include="GUI\images\service-1.png" />
+    <Content Include="GUI\images\service-2.png" />
+    <Content Include="GUI\images\service-3.png" />
+    <Content Include="GUI\index.aspx" />
+    <Content Include="GUI\js\bootstrap.bundle.js" />
+    <Content Include="GUI\js\bootstrap.bundle.min.js" />
+    <Content Include="GUI\js\bootstrap.js" />
+    <Content Include="GUI\js\bootstrap.min.js" />
+    <Content Include="GUI\js\jquery-3.3.1.min.js" />
+    <Content Include="GUI\js\popper.min.js" />
+    <Content Include="GUI\js\script.js" />
+    <Content Include="GUI\othersPages\agences.aspx" />
+    <Content Include="GUI\othersPages\contact.aspx" />
+    <Content Include="GUI\othersPages\courtiers.aspx" />
+    <Content Include="GUI\othersPages\identification\login.aspx" />
+    <Content Include="GUI\othersPages\identification\sigin.aspx" />
+    <Content Include="GUI\othersPages\infos.aspx" />
+    <Content Include="GUI\othersPages\proprietes\proprietesC.aspx" />
+    <Content Include="GUI\othersPages\proprietes\proprietesP.aspx" />
+    <Content Include="GUI\othersPages\proprietes\proprietesR.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\agences.aspx.cs">
+      <DependentUpon>agences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\agences.aspx.designer.cs">
+      <DependentUpon>agences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\courtiers.aspx.cs">
+      <DependentUpon>courtiers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\courtiers.aspx.designer.cs">
+      <DependentUpon>courtiers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\identification\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\identification\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\identification\sigin.aspx.cs">
+      <DependentUpon>sigin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\identification\sigin.aspx.designer.cs">
+      <DependentUpon>sigin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\infos.aspx.cs">
+      <DependentUpon>infos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\infos.aspx.designer.cs">
+      <DependentUpon>infos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesC.aspx.cs">
+      <DependentUpon>proprietesC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesC.aspx.designer.cs">
+      <DependentUpon>proprietesC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesP.aspx.cs">
+      <DependentUpon>proprietesP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesP.aspx.designer.cs">
+      <DependentUpon>proprietesP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesR.aspx.cs">
+      <DependentUpon>proprietesR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\othersPages\proprietes\proprietesR.aspx.designer.cs">
+      <DependentUpon>proprietesR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\css\bootstrap-grid.css.map" />
+    <Content Include="GUI\css\bootstrap-grid.min.css.map" />
+    <Content Include="GUI\css\bootstrap-reboot.css.map" />
+    <Content Include="GUI\css\bootstrap-reboot.min.css.map" />
+    <Content Include="GUI\css\bootstrap.css.map" />
+    <Content Include="GUI\css\bootstrap.min.css.map" />
+    <Content Include="GUI\js\bootstrap.bundle.js.map" />
+    <Content Include="GUI\js\bootstrap.bundle.min.js.map" />
+    <Content Include="GUI\js\bootstrap.js.map" />
+    <Content Include="GUI\js\bootstrap.min.js.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55538</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44369/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
